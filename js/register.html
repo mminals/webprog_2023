@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+</head>
+<body>
+ <h1>취업 정보 계정 만들기</h1>
+<p>* 필수 입력 항목</p>
+<p>기본 정보</p>
+<form>
+    <label>이름*<input type="text" name="name" id="name" size="8"></label><br>
+    <label>이메일*<input type="email" name="email" id="email" size="15" placeholder="id@domain_name"</label><br>
+    <label>암호*<input type="password" name="pwd id="pwd" size="12"</label><br>
+    <label>암호 확인*<input type="password" name="pwd2" id="pwd2" size="12"</label><br>
+    <label>모바일 폰*<input type="tel" name="phone" id="phone" size="13" placeholder="010-0000-0000" </label><br>
+    <label>개인 홈페이지<input type="url" name="homepg" id=homepg" size="30" placeholder="http://"></label><br>
+    <label>주소*<input type="text" name="add" id="add" size="30"></label><br>
+    <p>학력</p>
+    <label>학교 명*<input type="text" name="sch" id=sch" size="12"></label><br>
+    <label>전공*<input type="text" name="major" id="major" size="12"></label><br>
+    <label>졸업 여부*
+    <select name="gradu" id="gradu1">
+        <option value="0">---선택---</option>
+        <option value="1">졸업예정</option>
+        <option value="2">졸업</option>
+    </select></label><br>
+    <label>졸업 (예정)일<input type="date" id="date"></label>
+    <p>업무 경력</p>
+    <label>근무업체명<input type="text" id="job" size="20"></label><br>
+    <label>직위<input type="text" id="class" size="10"></label><br>
+    <label>담당 업무
+    <textarea id="comments" name="comments" cols="80" rows="10">이전 업체에서 담당한 업무를 기술하시오.
+    </textarea></label><br>
+    <label>근무 년수<input type="number" min="0" max="10" step="0.5">년</label>
+    <p>자기소개서</p>
+    <label>첨부 파일<input type="file"></label><br>
+    <input type="submit" value="제출">
+    <input type="reset" value="재작성"></div>
+</form>
+</body>
+</html>
