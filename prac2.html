@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>work02</title>
+    <style>
+        .info {margin-left: 8px; text-align: right; width: 130px; padding-right: 8px;}
+        .m {color: red; display: inline-block;}
+    </style>
+        </head>
+<body>
+ <h1>취업 정보 계정 만들기</h1>
+<p style="color: red; font-size: 10px;">* 필수 입력 항목</p>
+<p style="font-weight: bold; background-color: lightblue; width: 800px; padding-left: 10px">기본 정보</p>
+<form>
+    <div class ="info">
+        <p><label>이 름<span class="m">*</span><input type="text" name="name" id="name" size="8"></label></p>
+        <p><label>이메일<span class="m">*</span><input type="email" name="email" id="email" size="15" placeholder="id@domain_name"</label></p>
+        <p><label>암호<span class="m">*</span><input type="password" name="pwd id="pwd" size="12"</label></p>
+        <p><label>암호 확인<span class="m">*</span><input type="password" name="pwd2" id="pwd2" size="12"</label></p>
+        <p><label>모바일 폰<span class="m">*</span><input type="tel" name="phone" id="phone" size="13" placeholder="010-0000-0000"</label></p>
+        <p><label>개인 홈페이지<input type="url" name="homepg" id=homepg" size="30" placeholder="http://"></label></p>
+        <p><label>주소<span class="m">*</span><input type="text" name="add" id="add" size="30"></label></p>
+    </div>
+    <p style="font-weight: bold; background-color: lightblue; width: 800px; padding-left: 10px;">학력</p>
+    <div class ="info">
+    <p><label>학교 명<span class="m">*</span><input type="text" name="sch" id=sch" size="12"></label></p>
+    <p><label>전공<span class="m">*</span><input type="text" name="major" id="major" size="12"></label></p>
+    <p><label>졸업 여부<span class="m">*</span>
+    <select name="gradu" id="gradu1">
+        <option value="0">---선택---</option>
+        <option value="1">졸업예정</option>
+        <option value="2">졸업</option>
+    </select></label></p>
+        <p><label>졸업 (예정)일<input type="date" id="date"></label></p>
+    </div>
+    <p style="font-weight: bold; background-color: lightblue; width: 800px; padding-left: 10px;">업무 경력</p>
+    <div class ="info">
+        <p><label>근무업체명<input type="text" id="job" size="20"></label></p>
+        <p><label>직위<input type="text" id="class" size="10"></label></p>
+    <p><label>담당 업무
+    <textarea id="comments" name="comments" cols="80" rows="10">이전 업체에서 담당한 업무를 기술하시오.
+    </textarea></label></p>
+        <p><label>근무 년수<input type="number" min="0" max="10" step="0.5">년</label></p>
+    </div>
+    <p style="font-weight: bold; background-color: lightblue; width: 800px; padding-left: 10px;">자기소개서</p>
+    <div class ="info">
+        <p><label>첨부 파일<input type="file"></label></p>
+    </div>
+    <p style="margin-left: 200px;"><input type="submit" value="제출">
+        <input type="reset" value="재작성"></p>
+</form>
+</body>
+</html>
