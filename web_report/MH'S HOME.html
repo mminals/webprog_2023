@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MH'S HOME</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <style>
+        .fakeming {
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<header class="p-3 text-bg-primary text-center">
+    <h1>MH'S HOME</h1>
+    <p>Welcome</p>
+</header>
+<nav data-include-path="menu.html">
+    <script src="../js/get_tags.js"></script>
+</nav>
+<section class="container mt-5">
+    <article class="p-5">
+        <h3 class="text-info mb-3">About me</h3>
+        <div> 저는 동덕여자대학교 학생입니다. </div>
+    </article>
+    <article class="row mb-5">
+        <h3>과제</h3>
+        <div class="col-sm-4 bg-info">
+            <h4>과제 리스트</h4>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item"><a href="login.html" class="nav-link">과제 1</a></li>
+                 <li class="nav-item"><a href="work02.html" class="nav-link">과제 2</a></li>
+                 <li class="nav-item"><a href="work03.html" class="nav-link">과제 3</a></li>
+            </ul>
+            <hr class="d-sm-none">
+        </div>
+        <div class="col-sm-8 text-bg-dark">
+            <h4>과제 1</h4>
+            <p>주어진 컨텐츠에 대한 HTML 문서를 작성하시오. </p>
+        </div>
+        </article>
+    <article class="bbg-primary">
+            <h3>Favorites</h3>
+        <div class="fakeming bg-success">Fake image</div>
+    </article>
+</section>
+</body>
+</html>
